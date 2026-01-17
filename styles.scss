@@ -18,7 +18,7 @@ $border: 1px solid var(--border);
   --bg: #f8f9fa;
   --surface: #ffffff;
   --ink: #1a1a1a;
-  --muted: #374151;
+  --muted: #1f2937;
   --accent: #1e40af;
   --accent-2: #1e3a8a;
   --accent-soft: #dbeafe;
@@ -146,7 +146,7 @@ button:focus-visible {
 
 .lead {
   font-size: clamp(1.125rem, 1.5vw, 1.25rem);
-  color: var(--muted);
+  color: #1f2937;
   margin-bottom: 2rem;
   line-height: 1.7;
   max-width: 65ch;
@@ -310,7 +310,7 @@ button:focus-visible {
   min-height: 70vh;
   display: flex;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.8s ease, transform 0.8s ease;
 
   &.alt {
@@ -350,8 +350,8 @@ button:focus-visible {
 }
 
 .section h2 {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
 }
 
@@ -362,8 +362,8 @@ button:focus-visible {
 }
 
 .section .container > * {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -374,7 +374,7 @@ button:focus-visible {
 
 .section-intro {
   max-width: 70ch;
-  color: var(--muted);
+  color: #1f2937;
   font-size: 1.0625rem;
   line-height: 1.8;
   margin-bottom: 2rem;

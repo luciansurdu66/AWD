@@ -3,7 +3,7 @@
   --bg: #f8f9fa;
   --surface: #ffffff;
   --ink: #1a1a1a;
-  --muted: #374151;
+  --muted: #1f2937;
   --accent: #1e40af;
   --accent-2: #1e3a8a;
   --accent-soft: #dbeafe;
@@ -131,7 +131,7 @@ button:focus-visible {
 
 .lead {
   font-size: clamp(1.125rem, 1.5vw, 1.25rem);
-  color: var(--muted);
+  color: #1f2937;
   margin-bottom: 2rem;
   line-height: 1.7;
   max-width: 65ch;
@@ -219,7 +219,7 @@ button:focus-visible {
 
 .site-nav a {
   font-weight: 500;
-  color: var(--muted);
+  color: #374151;
   transition: color 0.2s ease;
   font-size: 0.9375rem;
 }
@@ -298,12 +298,12 @@ button:focus-visible {
   min-height: 70vh;
   display: flex;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .section.alt {
-  background: #f1f5f9;
+  background: #f8fafc;
 }
 
 .section.in-view {
@@ -332,8 +332,8 @@ button:focus-visible {
 }
 
 .section h2 {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
 }
 
@@ -344,8 +344,8 @@ button:focus-visible {
 }
 
 .section .container > * {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -356,7 +356,7 @@ button:focus-visible {
 
 .section-intro {
   max-width: 70ch;
-  color: var(--muted);
+  color: #1f2937;
   font-size: 1.0625rem;
   line-height: 1.8;
   margin-bottom: 2rem;
@@ -432,7 +432,7 @@ button:focus-visible {
 
 .gallery-card figcaption {
   padding: 1rem;
-  color: var(--muted);
+  color: #1f2937;
   font-size: 0.9375rem;
   line-height: 1.6;
 }
@@ -482,7 +482,7 @@ button:focus-visible {
 
 .glossary dd {
   margin: 0.4rem 0 0;
-  color: var(--muted);
+  color: #1f2937;
 }
 
 .reference-list {
