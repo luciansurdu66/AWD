@@ -66,7 +66,10 @@ p {
 
 img {
   max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
+  object-fit: cover;
 }
 
 a {
@@ -414,11 +417,24 @@ button:focus-visible {
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
 }
 
 .gallery-card figcaption {
   padding: 1rem;
   color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
 }
 
 .cards {
@@ -508,12 +524,51 @@ button:focus-visible {
 }
 
 @media (max-width: 720px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
   .hero-card {
     min-height: 180px;
+    padding: 1.5rem;
   }
 
   .site-nav ul {
     justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.75rem 0;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .gallery-card {
+    margin: 0;
+  }
+
+  .gallery-card img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .section {
+    padding: clamp(2rem, 5vw, 3rem) 0;
+    min-height: auto;
+  }
+
+  .section-intro {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .card {
+    padding: 1.5rem;
   }
 }
 
